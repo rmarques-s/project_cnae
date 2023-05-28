@@ -3,40 +3,41 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-# Definir a classe do modelo
+# Definindo a classe modelo
 Base = declarative_base()
 
 class CNAE(Base):
     __tablename__ = 'estabelecimentos'
-    id = Column(Integer, primary_key=True)
-    cnpj_ordem = Column(String(100))
-    cnpj_dv = Column(String(100))
-    identificador_matriz = Column(String(100))
-    nome_fantasia = Column(String(100))
-    situacao_cadastral = Column(String(100))
-    data_situacao_cadastral = Column(String(100))
-    motivo_situacao_cadastral = Column(String(100))
-    nome_cidade_exterior = Column(String(100))
-    pais = Column(String(100))
-    data_inicio_atividade = Column(String(100))
-    cnae_fiscal_principal = Column(String(100))
-    cnae_fiscal_secundario = Column(String(100))
-    tipo_logradouro = Column(String(100))
-    logradouro = Column(String(100))
-    numero = Column(String(100))
-    complemento = Column(String(100))
-    bairro = Column(String(100))
-    cep = Column(String(100))
-    uf = Column(String(100))
-    municipio = Column(String(100))
-    ddd_1 = Column(String(100))
-    telefone_1 = Column(String(100))
-    ddd_2 = Column(String(100))
-    ddd_FAX = Column(String(100))
-    fax = Column(String(100))
-    correio_eletronico =  Column(String(100))
-    situacao_especial = Column(String(100))
-    data_situacao_especial = Column(String(100))
+    cnpj_basico = Column(String(), primary_key=True)
+    cnpj_ordem = Column(String())
+    cnpj_dv = Column(String())
+    identificador_matriz = Column(String())
+    nome_fantasia = Column(String())
+    situacao_cadastral = Column(String())
+    data_situacao_cadastral = Column(String())
+    motivo_situacao_cadastral = Column(String())
+    nome_cidade_exterior = Column(String())
+    pais = Column(String())
+    data_inicio_atividade = Column(String())
+    cnae_fiscal_principal = Column(String())
+    cnae_fiscal_secundario = Column(String())
+    tipo_logradouro = Column(String())
+    logradouro = Column(String())
+    numero = Column(String())
+    complemento = Column(String())
+    bairro = Column(String())
+    cep = Column(String())
+    uf = Column(String())
+    municipio = Column(String())
+    ddd_1 = Column(String())
+    telefone_1 = Column(String())
+    ddd_2 = Column(String())
+    telefone_2 = Column(String())
+    ddd_FAX = Column(String())
+    fax = Column(String())
+    correio_eletronico =  Column(String())
+    situacao_especial = Column(String())
+    data_situacao_especial = Column(String())
     
 # Configurar a conexão com o banco de dados
 engine = create_engine('postgresql://postgres:postgres@localhost/cnae_rn')
@@ -54,10 +55,9 @@ Base.metadata.create_all(engine)
 if Base.metadata.create_all(engine) == True:
   print("Banco de dados conectado e tabela criada com sucesso!")
 
-# Para alterar a migração
-# alter_sql = "ALTER TABLE pessoas ADD COLUMN email VARCHAR(100)"
+# Para alterar a migration
+# alter_sql = "ALTER TABLE pessoas ADD COLUMN email VARCHAR()"
 # session.execute(alter_sql)
 # session.commit()
 
-# Encerrar a sessão
 session.close()
