@@ -50,7 +50,7 @@ session = Session()
 # engine.execute(create_schema)
 # session.commit()
 
-# Criar a tabela
+# Criando a tabela
 Base.metadata.create_all(engine)
 if Base.metadata.create_all(engine) == True:
   print("Banco de dados conectado e tabela criada com sucesso!")
