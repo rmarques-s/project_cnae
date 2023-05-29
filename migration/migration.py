@@ -39,7 +39,7 @@ class CNAE(Base):
     situacao_especial = Column(String())
     data_situacao_especial = Column(String())
     
-# Configurar a conexão com o banco de dados
+# Configurando a conexão com o banco de dados
 engine = create_engine('postgresql://postgres:postgres@localhost/cnae_rn')
 Session = sessionmaker(bind=engine)
 session = Session()
