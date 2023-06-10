@@ -1,0 +1,19 @@
+p{
+  color:white;
+  font-size: 3rem;
+  text-align: center;
+  padding: 3rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+img {
+  border-radius: 1rem;
+}
+
+body {
+  
+  background-image: url(./assets/bg_2.jpg);
+  background-position: top center;
+  background-size: 100% auto;
+  background-color: #121214;
+}
