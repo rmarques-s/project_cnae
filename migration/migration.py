@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -52,8 +52,6 @@ session = Session()
 
 # Criando a tabela
 Base.metadata.create_all(engine)
-if Base.metadata.create_all(engine) == True:
-  print("Banco de dados conectado e tabela criada com sucesso!")
 
 # Para alterar a migration
 # alter_sql = "ALTER TABLE pessoas ADD COLUMN email VARCHAR()"
