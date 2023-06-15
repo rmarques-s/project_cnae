@@ -44,17 +44,11 @@ engine = create_engine('postgresql://postgres:postgres@localhost/cnae_rn')
 Session = sessionmaker(bind=engine)
 session = Session()
 
-# # Criar o schema
-# schema_name = 'estabelecimentos'
-# create_schema = CreateSchema(schema_name)
-# engine.execute(create_schema)
-# session.commit()
-
 # Criando a tabela
 Base.metadata.create_all(engine)
 
 # Para alterar a migration
-# alter_sql = "ALTER TABLE pessoas ADD COLUMN email VARCHAR()"
+# alter_sql = "ALTER TABLE .... ADD COLUMN ..."
 # session.execute(alter_sql)
 # session.commit()
 
