@@ -9,4 +9,4 @@ Projeto criado durante a disciplina ALGORITMO E PROGRAMACAO ORIENTADA AO OBJETO 
 - PgAdmin (PostgreSQL 12.15)
 - Biblioteca Pandas
 - Google Colab 
-- HTML 5 / CSS / Javascript 
+- HTML 5 / CSS
