@@ -22,6 +22,12 @@ def Index():
     list_establishments = cur.fetchall()
     return render_template('main.html', list_establishments=list_establishments)
 
+@app.route('/')
+def getCNAE():
+    cur = connect.cursor(cursor_factory=psycopg2.extras.DictCursor)
+    s = "SELECT * FROM public.template_estabelecimentos.descricao"
+    cur.execute(s)
+
 if __name__ == "__main__":
     app.run(debug=True)
 

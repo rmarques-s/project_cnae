@@ -13,13 +13,16 @@
 <body>
     <nav class="navbar navbar-dark bg-dark">
       <a class="navbar-brand" href="/">UFRN - Universidade Federal do Rio Grande do Norte</a>
-    </nav>
-  
+    </nav>  
     <div class="container pt-4">
       {% block body %}
       {% endblock %}
     </div>
-   
+    <footer id="sticky-footer" class="flex-shrink-0 py-3 bg-dark text-white-50" style="margin: bottom 0;">
+      <div class="container text-center">
+        <small style="color: white; display: flex; justify-content: flex-end;">&copy; Desenvolvido em 2023</small>
+      </div>
+    </footer>   
 <script>
 const btnDelete= document.querySelectorAll('.btn-delete');
 if(btnDelete) {
