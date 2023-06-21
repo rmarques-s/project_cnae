@@ -6,7 +6,9 @@ Projeto criado durante a disciplina ALGORITMO E PROGRAMACAO ORIENTADA AO OBJETO 
 
 🖥 Ferramentas:
 
-- PgAdmin (PostgreSQL 12.15)
+- Flask
+- Google Colab
 - Biblioteca Pandas
-- Google Colab 
 - HTML 5 / CSS / Javascript
+- PgAdmin (PostgreSQL 12.15)
+
