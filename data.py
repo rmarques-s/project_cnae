@@ -27,6 +27,8 @@ def getCNAE():
     cur = connect.cursor(cursor_factory=psycopg2.extras.DictCursor)
     s = "SELECT * FROM public.template_estabelecimentos.descricao"
     cur.execute(s)
+    list_CNAE = cur.fetchall()
+    return render_template('main.html', list_CNAE=list_CNAE)
 
 if __name__ == "__main__":
     app.run(debug=True)
