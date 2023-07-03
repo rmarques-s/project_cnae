@@ -49,7 +49,3 @@ def get_barchart_data():
 
 if __name__ == "__main__":
     app.run(debug=True)
-
-#dataframe = pd.read_csv('/home/rafaelamarques/project_cnae/estabelecimentos_RN.csv')
-
-#print(dataframe.head())  # Exibe as primeiras linhas do DataFrame
