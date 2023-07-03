@@ -1,18 +1,22 @@
 {% extends "layout.html" %}
 {% block body %}
-<div class="row"><h3>Perfil Socioeconômico do Rio Grande de Norte</h3></div>
+<div class="row"><h3>  📊 Perfil Socioeconômico do Rio Grande de Norte</h3></div>
 <div class="col-md-8">
-  <a target="_blank" style="margin:1rem;" href="https://colab.research.google.com/drive/1kWJ5QHS4ONXfchbv35b_TB8MXZY8Nmw9#scrollTo=Gl-WbsJvU4r5">Clique aqui para acessar a análise dos dados no Google Colab!</a>
+  <a target="_blank" style="margin:1rem; font-size: 20px;" href="https://colab.research.google.com/drive/1kWJ5QHS4ONXfchbv35b_TB8MXZY8Nmw9#scrollTo=Gl-WbsJvU4r5">Clique aqui para acessar a análise dos dados no Google Colab!</a>
+  <img src="">
+
   <table id="example" class="table table-striped table-bordered" style="width:100%">
     <thead>
       <tr>
         <td>CPNJ Básico</td>
         <td>Nome Fantasia</td>
         <td>Bairro</td>
+        <td>Telefone 1</td>
+        <td>Telefone 2</td>
+        <td>Email</td>
         <td>Município</td>
+        <td>Código CNAE</td>
         <td>Atividade Econômica</td>
-        <td>Capital empresa</td>
-        <td>Ver</td>
       </tr>
     </thead>
     <tbody>
@@ -23,30 +27,23 @@
         <td>{{row[2]}}</td>
         <td>{{row[3]}}</td>
         <td> {{row[4]}}</td>
-        <td><a href="/editar/{{libro.isbn}}"><i class="bi bi-pen-fill"></i></a></td>
+        <td> {{row[5]}}</td>
+        <td> {{row[6]}}</td>
+        <td> {{row[7]}}</td>
+        <td> {{row[8]}}</td>
       </tr>
       {% endfor %}
     </tbody>
   </table>
-<<<<<<< HEAD
-  <table id="example" class="table table-striped table-bordered" style="width:100%">
-    <thead>
-      <tr>
-        <td>
-          Bairros
-        </td>
-      </tr>
-    </thead>
-      <tbody>
-        {% for r in list_CNAE %}
-        <tr>
-              <td>{{r}}</td>
-        </tr>
-        {% endfor %}
-      </tbody>
-  </table>
-=======
->>>>>>> 306f21738fa637b98a126e1d99cacdfd633f6adb
 </div>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+    <script>
+        const barChartDataUrl = "{{ url_for('get_barchart_data') }}";
+    </script>
+    <script src="{{ url_for('static', filename='js/pieChart.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/barChart.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/updateBarChart.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
 
 {% endblock %}
