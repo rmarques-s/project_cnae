@@ -14,7 +14,7 @@ Projeto criado durante a disciplina ALGORITMO E PROGRAMACAO ORIENTADA AO OBJETO 
 
 - Rodando o template: Digite "python3 data.py" no terminal e a tabela com os estabelecimentos será gerada.
 
-OBS: O projeto ainda está em andamento! Futuramente serão implementadas novas funcionalidades.
+**OBS: O projeto ainda está em andamento! Futuramente serão implementadas novas funcionalidades.**
 
 # 🖥 Ferramentas:
 
