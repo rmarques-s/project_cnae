@@ -16,7 +16,7 @@ Para rodar o template com a tabela que servirá de consulta, digite "python3 dat
 
 OBS: O projeto ainda está em andamento! Futuramente serão implementadas novas funcionalidades.
 
-🖥 Ferramentas:
+# 🖥 Ferramentas:
 
 - Flask
 - Google Colab
