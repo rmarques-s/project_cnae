@@ -6,13 +6,13 @@ Projeto criado durante a disciplina ALGORITMO E PROGRAMACAO ORIENTADA AO OBJETO 
 
 > Para rodar o projeto:
 
-- Criando sua tabela no banco: Rode as migrations migration_companies.py e migration_establishments.py. Esses códigos irão criar sua tabela com todos os campos necessários para você importar os dados dentro do banco.
+- Criando sua tabela no banco: Rode as migrations *migration_companies.py* e *migration_establishments.py*. Esses códigos irão criar sua tabela com todos os campos necessários para você importar os dados dentro do banco.
 
-- Lendo e inserindo dados no banco: Abra os arquivos, selecione algumas linhas e coloque em outro arquivo menor. Assim, ao entrar no PGAdmin basta clicar em "import/export data" e selecionar seu arquivo menor. Ele será lido pelo PostgreSQL e irá gerar sua tabela com os dados.
+- Lendo e inserindo dados no banco: Abra os arquivos, selecione algumas linhas e coloque em outro arquivo menor. Assim, ao entrar no PGAdmin basta clicar em *"import/export data"* e selecionar seu arquivo menor. Ele será lido pelo PostgreSQL e irá gerar sua tabela com os dados.
 
 - Sugestão: Para gerar uma tabela mais limpa, crie uma view apenas com os dados mais necessários, se você optar por ter todas as colunas ou colunas diferentes das que eu selecionei, basta mudar a referência do endpoint.
 
-- Rodando o template: Digite "python3 data.py" no terminal e a tabela com os estabelecimentos será gerada.
+- Rodando o template: Digite *"python3 data.py"* no terminal e a tabela com os estabelecimentos será gerada.
 
 **OBS: O projeto ainda está em andamento! Futuramente serão implementadas novas funcionalidades.**
 
