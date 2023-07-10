@@ -6,7 +6,7 @@ Projeto criado durante a disciplina ALGORITMO E PROGRAMACAO ORIENTADA AO OBJETO 
 
 > Para rodar o projeto:
 
-- Criando sua tabela no banco: Rode as migrations *migration_companies.py* e *migration_establishments.py*. Esses códigos irão criar sua tabela com todos os campos necessários para você importar os dados dentro do banco.
+- Criando sua tabela no banco: Rode as migrations *migration_companies.py*, *migration_establishments.py*, *migration_cnae.py* e *migration_counties.py*. Esses códigos irão criar sua tabela com todos os campos necessários para você importar os dados dentro do banco.
 
 - Lendo e inserindo dados no banco: Abra os arquivos, selecione algumas linhas e coloque em outro arquivo menor. Assim, ao entrar no PGAdmin basta clicar em *"import/export data"* e selecionar seu arquivo menor. Ele será lido pelo PostgreSQL e irá gerar sua tabela com os dados.
 
