@@ -18,7 +18,7 @@ connect = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASS, host=
 @app.route('/')
 def Index():
     cur = connect.cursor(cursor_factory=psycopg2.extras.DictCursor)
-    s = "SELECT * FROM public.template_estabelecimentos"
+    s = "SELECT * FROM public.estabelecimentos"
     cur.execute(s) #Execute the SQL
     list_establishments = cur.fetchall()
     return render_template('main.html', list_establishments=list_establishments)
