@@ -20,7 +20,7 @@ Projeto criado durante a disciplina ALGORITMO E PROGRAMACAO ORIENTADA AO OBJETO 
 
 - Flask
 - Google Colab
+- HTML 5 / CSS
 - Biblioteca Pandas
-- HTML 5 / CSS / Javascript
 - PgAdmin (PostgreSQL 12.15)
 
