@@ -31,21 +31,21 @@ def get_neighborhood():
     list_CNAE = cur.fetchall()
     return render_template('main.html', list_CNAE=list_CNAE)
 
-def data_creation(data, percent, class_labels):
-    for index, item in enumerate(percent):
-        data_instance = {}
-        data_instance['id'] = class_labels[index]
-        data_instance['value'] = item
-        data.append(data_instance)
+# def data_creation(data, percent, class_labels):
+#     for index, item in enumerate(percent):
+#         data_instance = {}
+#         data_instance['id'] = class_labels[index]
+#         data_instance['value'] = item
+#         data.append(data_instance)
 
-@app.route('/get_barchart_data')
-def get_barchart_data():
-    tenure_labels = ['0-9', '10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79']
-    neighborhoods = pd.cut(get_neighborhood.tenure, range(0, 81, 10), labels=tenure_labels)
+# @app.route('/get_barchart_data')
+# def get_barchart_data():
+#     tenure_labels = ['0-9', '10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79']
+#     neighborhoods = pd.cut(get_neighborhood.tenure, range(0, 81, 10), labels=tenure_labels)
 
-    barchart_data = []
-    data_creation(barchart_data,neighborhoods, tenure_labels, "All")
-    return jsonify(barchart_data)
+#     barchart_data = []
+#     data_creation(barchart_data,neighborhoods, tenure_labels, "All")
+#     return jsonify(barchart_data)
 
 if __name__ == "__main__":
     app.run(debug=True)
